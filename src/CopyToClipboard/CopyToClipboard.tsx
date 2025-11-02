@@ -4,7 +4,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 
-interface CopyToClipboardProps {
+export interface CopyToClipboardProps {
   text: string;
 }
 
