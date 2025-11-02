@@ -55,5 +55,6 @@ export default [{
     'dist',
     'build',
     'vite.config.ts',
+    'tsup.config.ts',
   ],
 }];
