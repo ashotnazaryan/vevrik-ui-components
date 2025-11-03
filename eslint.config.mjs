@@ -54,7 +54,7 @@ export default [{
     'node_modules',
     'dist',
     'build',
-    'vite.config.ts',
+    'scripts',
     'tsup.config.ts',
   ],
 }];
