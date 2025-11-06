@@ -1,6 +1,6 @@
 {
   "name": "@vevrik/ui-components",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Reusable React UI components built with MUI",
   "author": {
     "name": "Ashot",
@@ -19,57 +19,6 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    },
-    "./CircularLoader": {
-      "types": "./dist/CircularLoader/index.d.ts",
-      "import": "./dist/CircularLoader/index.js",
-      "require": "./dist/CircularLoader/index.cjs"
-    },
-    "./CopyToClipboard": {
-      "types": "./dist/CopyToClipboard/index.d.ts",
-      "import": "./dist/CopyToClipboard/index.js",
-      "require": "./dist/CopyToClipboard/index.cjs"
-    },
-    "./LinearLoader": {
-      "types": "./dist/LinearLoader/index.d.ts",
-      "import": "./dist/LinearLoader/index.js",
-      "require": "./dist/LinearLoader/index.cjs"
-    },
-    "./LoadingButton": {
-      "types": "./dist/LoadingButton/index.d.ts",
-      "import": "./dist/LoadingButton/index.js",
-      "require": "./dist/LoadingButton/index.cjs"
-    },
-    "./Snackbar": {
-      "types": "./dist/Snackbar/index.d.ts",
-      "import": "./dist/Snackbar/index.js",
-      "require": "./dist/Snackbar/index.cjs"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      "CircularLoader": [
-        "./dist/CircularLoader/index.d.ts"
-      ],
-      "CopyToClipboard": [
-        "./dist/CopyToClipboard/index.d.ts"
-      ],
-      "LinearLoader": [
-        "./dist/LinearLoader/index.d.ts"
-      ],
-      "LoadingButton": [
-        "./dist/LoadingButton/index.d.ts"
-      ],
-      "Snackbar": [
-        "./dist/Snackbar/index.d.ts"
-      ]
-    }
-  },
   "files": [
     "dist"
   ],
@@ -125,5 +74,64 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./CircularLoader": {
+      "types": "./dist/CircularLoader/index.d.ts",
+      "import": "./dist/CircularLoader/index.js",
+      "require": "./dist/CircularLoader/index.cjs"
+    },
+    "./CopyToClipboard": {
+      "types": "./dist/CopyToClipboard/index.d.ts",
+      "import": "./dist/CopyToClipboard/index.js",
+      "require": "./dist/CopyToClipboard/index.cjs"
+    },
+    "./LinearLoader": {
+      "types": "./dist/LinearLoader/index.d.ts",
+      "import": "./dist/LinearLoader/index.js",
+      "require": "./dist/LinearLoader/index.cjs"
+    },
+    "./LoadingButton": {
+      "types": "./dist/LoadingButton/index.d.ts",
+      "import": "./dist/LoadingButton/index.js",
+      "require": "./dist/LoadingButton/index.cjs"
+    },
+    "./Page": {
+      "types": "./dist/Page/index.d.ts",
+      "import": "./dist/Page/index.js",
+      "require": "./dist/Page/index.cjs"
+    },
+    "./Snackbar": {
+      "types": "./dist/Snackbar/index.d.ts",
+      "import": "./dist/Snackbar/index.js",
+      "require": "./dist/Snackbar/index.cjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "CircularLoader": [
+        "./dist/CircularLoader/index.d.ts"
+      ],
+      "CopyToClipboard": [
+        "./dist/CopyToClipboard/index.d.ts"
+      ],
+      "LinearLoader": [
+        "./dist/LinearLoader/index.d.ts"
+      ],
+      "LoadingButton": [
+        "./dist/LoadingButton/index.d.ts"
+      ],
+      "Page": [
+        "./dist/Page/index.d.ts"
+      ],
+      "Snackbar": [
+        "./dist/Snackbar/index.d.ts"
+      ]
+    }
   }
 }

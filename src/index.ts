@@ -12,3 +12,6 @@ export * from './LoadingButton';
 
 export { default as Snackbar } from './Snackbar';
 export * from './Snackbar';
+
+export { default as Page } from './Page';
+export * from './Page';
