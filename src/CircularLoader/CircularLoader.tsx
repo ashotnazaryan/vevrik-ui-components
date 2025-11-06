@@ -2,9 +2,9 @@ import React from 'react';
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
 
-interface CircularLoaderProps {
+export type CircularLoaderProps = {
   delay?: number;
-}
+};
 
 const CircularLoader: React.FC<CircularLoaderProps> = ({ delay = 200 }) => {
   const [showLoader, setShowLoader] = React.useState(false);

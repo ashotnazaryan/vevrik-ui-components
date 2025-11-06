@@ -3,7 +3,7 @@ import { alpha } from '@mui/material/styles';
 import Backdrop, { BackdropProps } from '@mui/material/Backdrop';
 import LinearProgress from '@mui/material/LinearProgress';
 
-type LinearLoaderProps = {
+export type LinearLoaderProps = {
   delay?: number;
   backgroundColor?: string;
 } & BackdropProps;
