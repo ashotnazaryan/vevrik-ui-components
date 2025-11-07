@@ -1,7 +1,7 @@
 {
   "name": "@vevrik/ui-components",
-  "version": "0.1.9",
-  "description": "Reusable React UI components built with MUI",
+  "version": "0.1.10",
+  "description": "Reusable React UI components for Vevrik platform built with MUI",
   "author": {
     "name": "Ashot",
     "url": "https://github.com/ashotnazaryan/vevrik-ui-components"
@@ -34,7 +34,7 @@
     "build": "npm run generate:exports && tsup && tsc",
     "generate:exports": "node ./scripts/generate-exports.js",
     "lint": "eslint . --ext .ts,.tsx",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,json,html,md,yml,yaml,scss}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,json,html,md,yml,yaml,scss}\"",
     "prepare": "husky",
     "typecheck": "tsc --noEmit",
     "clean": "rimraf dist",
@@ -91,6 +91,21 @@
       "import": "./dist/CopyToClipboard/index.js",
       "require": "./dist/CopyToClipboard/index.cjs"
     },
+    "./Details": {
+      "types": "./dist/Details/index.d.ts",
+      "import": "./dist/Details/index.js",
+      "require": "./dist/Details/index.cjs"
+    },
+    "./helpers": {
+      "types": "./dist/helpers/index.d.ts",
+      "import": "./dist/helpers/index.js",
+      "require": "./dist/helpers/index.cjs"
+    },
+    "./hooks": {
+      "types": "./dist/hooks/index.d.ts",
+      "import": "./dist/hooks/index.js",
+      "require": "./dist/hooks/index.cjs"
+    },
     "./LinearLoader": {
       "types": "./dist/LinearLoader/index.d.ts",
       "import": "./dist/LinearLoader/index.js",
@@ -110,6 +125,11 @@
       "types": "./dist/Snackbar/index.d.ts",
       "import": "./dist/Snackbar/index.js",
       "require": "./dist/Snackbar/index.cjs"
+    },
+    "./Table": {
+      "types": "./dist/Table/index.d.ts",
+      "import": "./dist/Table/index.js",
+      "require": "./dist/Table/index.cjs"
     }
   },
   "typesVersions": {
@@ -119,6 +139,15 @@
       ],
       "CopyToClipboard": [
         "./dist/CopyToClipboard/index.d.ts"
+      ],
+      "Details": [
+        "./dist/Details/index.d.ts"
+      ],
+      "helpers": [
+        "./dist/helpers/index.d.ts"
+      ],
+      "hooks": [
+        "./dist/hooks/index.d.ts"
       ],
       "LinearLoader": [
         "./dist/LinearLoader/index.d.ts"
@@ -131,6 +160,9 @@
       ],
       "Snackbar": [
         "./dist/Snackbar/index.d.ts"
+      ],
+      "Table": [
+        "./dist/Table/index.d.ts"
       ]
     }
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Typography, { TypographyProps } from '@mui/material/Typography';
+import { usePageContext } from './PageContext';
 
 type PageSubtitleProps = TypographyProps;
 
@@ -10,6 +11,12 @@ const PageSubtitle = ({
   children,
   ...props
 }: React.PropsWithChildren<PageSubtitleProps>) => {
+  const context = usePageContext();
+
+  if (!context) {
+    throw new Error('PageSubtitle must be used within a Page component using PageContext.');
+  }
+
   return (
     <Typography variant={variant} component="p" color={color} sx={{ textAlign: 'center', ...sx }} {...props}>
       {children}
