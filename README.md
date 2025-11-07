@@ -1,3 +1,3 @@
 # vevrik-ui-components
 
-Reusable components
+Reusable React UI components for Vevrik platform built with MUI

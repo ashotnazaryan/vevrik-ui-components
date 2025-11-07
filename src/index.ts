@@ -15,3 +15,9 @@ export * from './Snackbar';
 
 export { default as Page } from './Page';
 export * from './Page';
+
+export { default as Details } from './Details';
+export * from './Details';
+
+export { default as Table } from './Table';
+export * from './Details';
