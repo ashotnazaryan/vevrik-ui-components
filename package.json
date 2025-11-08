@@ -1,6 +1,6 @@
 {
   "name": "@vevrik/ui-components",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Reusable React UI components for Vevrik platform built with MUI",
   "author": {
     "name": "Ashot",
@@ -34,17 +34,17 @@
     "build": "npm run generate:exports && tsup && tsc",
     "generate:exports": "node ./scripts/generate-exports.js",
     "lint": "eslint . --ext .ts,.tsx",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,json,html,md,yml,yaml,scss}\"",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,json,html,md,yml,yaml,scss}'",
+    "format:check": "prettier --check 'src/**/*.{js,jsx,ts,tsx,css,json,html,md,yml,yaml,scss}'",
     "prepare": "husky",
-    "typecheck": "tsc --noEmit",
     "clean": "rimraf dist",
     "prepublishOnly": "npm run clean && npm run build"
   },
   "peerDependencies": {
-    "@mui/icons-material": "^6 || ^7",
-    "@mui/material": "^6 || ^7",
+    "@mui/icons-material": "^7",
+    "@mui/material": "^7",
     "react": "^18 || ^19",
-    "react-dom": "^18 || ^19"
+    "react-hook-form": "^7"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,css,scss,md}": [
@@ -55,10 +55,9 @@
   "devDependencies": {
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.0",
-    "@mui/icons-material": "^7.0.0",
-    "@mui/material": "^7.0.0",
+    "@mui/icons-material": "^7.3.5",
+    "@mui/material": "^7.3.5",
     "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^8.46.2",
     "@typescript-eslint/parser": "^8.46.2",
     "eslint": "^9.12.0",
@@ -68,9 +67,10 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "husky": "^9.1.7",
     "prettier": "^3.3.3",
+    "react-hook-form": "^7.66.0",
+    "rimraf": "^6.0.1",
     "tsup": "^8.5.0",
-    "typescript": "^5.6.3",
-    "rimraf": "^6.0.1"
+    "typescript": "^5.6.3"
   },
   "publishConfig": {
     "access": "public"
@@ -95,6 +95,16 @@
       "types": "./dist/Details/index.d.ts",
       "import": "./dist/Details/index.js",
       "require": "./dist/Details/index.cjs"
+    },
+    "./FileUpload": {
+      "types": "./dist/FileUpload/index.d.ts",
+      "import": "./dist/FileUpload/index.js",
+      "require": "./dist/FileUpload/index.cjs"
+    },
+    "./Form": {
+      "types": "./dist/Form/index.d.ts",
+      "import": "./dist/Form/index.js",
+      "require": "./dist/Form/index.cjs"
     },
     "./helpers": {
       "types": "./dist/helpers/index.d.ts",
@@ -142,6 +152,12 @@
       ],
       "Details": [
         "./dist/Details/index.d.ts"
+      ],
+      "FileUpload": [
+        "./dist/FileUpload/index.d.ts"
+      ],
+      "Form": [
+        "./dist/Form/index.d.ts"
       ],
       "helpers": [
         "./dist/helpers/index.d.ts"

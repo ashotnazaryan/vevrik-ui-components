@@ -10,6 +10,9 @@ export * from './CopyToClipboard';
 export { default as LoadingButton } from './LoadingButton';
 export * from './LoadingButton';
 
+export { default as FileUpload } from './FileUpload';
+export * from './FileUpload';
+
 export { default as Snackbar } from './Snackbar';
 export * from './Snackbar';
 
@@ -18,6 +21,9 @@ export * from './Page';
 
 export { default as Details } from './Details';
 export * from './Details';
+
+export { default as Form } from './Form';
+export * from './Form';
 
 export { default as Table } from './Table';
 export * from './Details';
