@@ -1,6 +1,6 @@
 {
   "name": "@vevrik/ui-components",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Reusable React UI components for Vevrik platform built with MUI",
   "author": {
     "name": "Ashot",
@@ -16,7 +16,7 @@
     "url": "https://github.com/ashotnazaryan/vevrik-ui-components/issues"
   },
   "sideEffects": false,
-  "main": "./dist/index.cjs",
+  "type": "module",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -43,7 +43,7 @@
   "peerDependencies": {
     "@mui/icons-material": "^7",
     "@mui/material": "^7",
-    "react": "^18 || ^19",
+    "react": "^19",
     "react-hook-form": "^7"
   },
   "lint-staged": {
@@ -57,9 +57,11 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^7.3.5",
     "@mui/material": "^7.3.5",
+    "@types/node": "^24.10.0",
     "@types/react": "^18.3.11",
     "@typescript-eslint/eslint-plugin": "^8.46.2",
     "@typescript-eslint/parser": "^8.46.2",
+    "esbuild-visualizer": "^0.7.0",
     "eslint": "^9.12.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.5.4",
@@ -68,7 +70,7 @@
     "husky": "^9.1.7",
     "prettier": "^3.3.3",
     "react-hook-form": "^7.66.0",
-    "rimraf": "^6.0.1",
+    "rimraf": "^6.1.0",
     "tsup": "^8.5.0",
     "typescript": "^5.6.3"
   },
@@ -78,68 +80,55 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.js"
     },
     "./CircularLoader": {
       "types": "./dist/CircularLoader/index.d.ts",
-      "import": "./dist/CircularLoader/index.js",
-      "require": "./dist/CircularLoader/index.cjs"
+      "import": "./dist/CircularLoader/index.js"
     },
     "./CopyToClipboard": {
       "types": "./dist/CopyToClipboard/index.d.ts",
-      "import": "./dist/CopyToClipboard/index.js",
-      "require": "./dist/CopyToClipboard/index.cjs"
+      "import": "./dist/CopyToClipboard/index.js"
     },
     "./Details": {
       "types": "./dist/Details/index.d.ts",
-      "import": "./dist/Details/index.js",
-      "require": "./dist/Details/index.cjs"
+      "import": "./dist/Details/index.js"
     },
     "./FileUpload": {
       "types": "./dist/FileUpload/index.d.ts",
-      "import": "./dist/FileUpload/index.js",
-      "require": "./dist/FileUpload/index.cjs"
+      "import": "./dist/FileUpload/index.js"
     },
     "./Form": {
       "types": "./dist/Form/index.d.ts",
-      "import": "./dist/Form/index.js",
-      "require": "./dist/Form/index.cjs"
+      "import": "./dist/Form/index.js"
     },
     "./helpers": {
       "types": "./dist/helpers/index.d.ts",
-      "import": "./dist/helpers/index.js",
-      "require": "./dist/helpers/index.cjs"
+      "import": "./dist/helpers/index.js"
     },
     "./hooks": {
       "types": "./dist/hooks/index.d.ts",
-      "import": "./dist/hooks/index.js",
-      "require": "./dist/hooks/index.cjs"
+      "import": "./dist/hooks/index.js"
     },
     "./LinearLoader": {
       "types": "./dist/LinearLoader/index.d.ts",
-      "import": "./dist/LinearLoader/index.js",
-      "require": "./dist/LinearLoader/index.cjs"
+      "import": "./dist/LinearLoader/index.js"
     },
     "./LoadingButton": {
       "types": "./dist/LoadingButton/index.d.ts",
-      "import": "./dist/LoadingButton/index.js",
-      "require": "./dist/LoadingButton/index.cjs"
+      "import": "./dist/LoadingButton/index.js"
     },
     "./Page": {
       "types": "./dist/Page/index.d.ts",
-      "import": "./dist/Page/index.js",
-      "require": "./dist/Page/index.cjs"
+      "import": "./dist/Page/index.js"
     },
     "./Snackbar": {
       "types": "./dist/Snackbar/index.d.ts",
-      "import": "./dist/Snackbar/index.js",
-      "require": "./dist/Snackbar/index.cjs"
+      "import": "./dist/Snackbar/index.js"
     },
     "./Table": {
       "types": "./dist/Table/index.d.ts",
-      "import": "./dist/Table/index.js",
-      "require": "./dist/Table/index.cjs"
+      "import": "./dist/Table/index.js"
     }
   },
   "typesVersions": {
